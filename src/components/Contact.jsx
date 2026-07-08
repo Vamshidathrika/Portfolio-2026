@@ -43,12 +43,21 @@ export default function Contact() {
       setIsSubmitting(false);
       setSubmitSuccess(true);
 
+      // Construct WhatsApp link with form details
+      const phoneNumber = "918121948341";
+      const messageText = `*New Portfolio Inquiry* 🚀\n\n*Name:* ${form.name}\n*Email:* ${form.email}\n*Company:* ${form.company || "N/A"}\n*Service:* ${form.service}\n*Message:* ${form.message}`;
+      const encodedMessage = encodeURIComponent(messageText);
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+      // Open WhatsApp in a new tab
+      window.open(whatsappUrl, "_blank");
+
       // Reset form
       setForm({ name: "", email: "", company: "", service: "Design", message: "" });
 
       // Clear success indicator after a few seconds
       setTimeout(() => setSubmitSuccess(false), 5000);
-    }, 1200);
+    }, 800);
   };
 
   return (
