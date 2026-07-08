@@ -41,12 +41,7 @@ export const projects = [
       "Dynamic prompt validation is essential to prevent LLM format hallucination when syncing with databases.",
       "Pre-filtering HTML headers is a cost-effective way to decrease API expenses by up to 50%."
     ],
-    testimonial: {
-      quote: "This pipeline changed how I start my workday. I scan a single Slack message, take action, and skip the email inbox crawl entirely.",
-      author: "Alex Rivers",
-      role: "Founder, Zenith SaaS",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=120&auto=format&fit=crop"
-    },
+
     creatives: [
       { title: "n8n Workflow Structure", desc: "Trigger → Filter → LLM Categorizer → Slack Sync", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=400&auto=format&fit=crop" },
       { title: "Slack Digest Layout", desc: "Interactive block-kit layout with priorities", img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=400&auto=format&fit=crop" }
@@ -94,12 +89,7 @@ export const projects = [
       "The best way to guarantee task board compliance is to automate transitions through engineering actions.",
       "Founders don't need to see ticket details; they just need active blocking items and sprint progress."
     ],
-    testimonial: {
-      quote: "Our tracking administrative overhead dropped to zero. The board updates itself based on our commits, keeping everyone in sync.",
-      author: "Marcus Chen",
-      role: "CTO, Prism Finance",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=120&auto=format&fit=crop"
-    },
+
     creatives: [
       { title: "Simplified Jira board view", desc: "Clean status lanes optimized for speed", img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=400&auto=format&fit=crop" },
       { title: "GitHub-Jira Automation", desc: "Trigger mapping linking branches to tasks", img: "https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?q=80&w=400&auto=format&fit=crop" }
@@ -147,12 +137,7 @@ export const projects = [
       "Creator positioning works best when addressing target client pain points directly, rather than general advice.",
       "The first 3 seconds of vertical video dictate over 80% of ultimate reach outcomes."
     ],
-    testimonial: {
-      quote: "Vamshi didn't just edit videos; he structured my entire personal brand distribution model. My impressions and inbound leads exploded.",
-      author: "Sanjay Kumar",
-      role: "SaaS Founder & Creator",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=120&auto=format&fit=crop"
-    },
+
     creatives: [
       { title: "LinkedIn Carousel Templates", desc: "High-contrast visual design layouts", img: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=400&auto=format&fit=crop" },
       { title: "Instagram Hook Reels", desc: "Engaging text overlays on vertical frames", img: "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=400&auto=format&fit=crop" }
@@ -200,12 +185,7 @@ export const projects = [
       "Server-side tracking is no longer optional for media buying; it is crucial to feed machine-learning algorithms accurate data.",
       "Advantage+ Shopping campaigns scale best when fed 10+ varied creative angles at any time."
     ],
-    testimonial: {
-      quote: "Our tracking and data gaps disappeared. We were able to scale our monthly marketing spend securely while maintaining an excellent ROAS.",
-      author: "Jessica Mercer",
-      role: "CMO, Nova Wellness",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=120&auto=format&fit=crop"
-    },
+
     creatives: [
       { title: "Attribution Dashboard", desc: "GA4 server-side reporting panel", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=400&auto=format&fit=crop" },
       { title: "Facebook Ad Angle Tests", desc: "High-contrast dynamic creative visual grid", img: "https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?q=80&w=400&auto=format&fit=crop" }
@@ -253,12 +233,7 @@ export const projects = [
       "Healthcare branding must balance clinical trust with warm empathy; combining medical symbols with human elements achieves this.",
       "Vector logos for hospitals must remain legible at very small scale on patient tags and invoice headers."
     ],
-    testimonial: {
-      quote: "The new brand identity completely transformed our visual presence. It projects both the high-end clinical expertise we offer and the warmth our patients expect.",
-      author: "Dr. R. K. Sharma",
-      role: "Managing Director, Aashirwad Hospital",
-      avatar: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=120&auto=format&fit=crop"
-    },
+
     creatives: [
       { title: "OPD Invoice & Letterhead", desc: "Hospital letterhead layout for medical log systems", img: "https://res.cloudinary.com/ddeyyxq14/image/upload/v1783321091/artboard_2_copy_720_grmc3v.png" }
     ]
@@ -305,12 +280,7 @@ export const projects = [
       "Wellness food branding thrives on authenticity—organic textures and hand-drawn elements build emotional trust far better than sterile minimalism.",
       "Packaging is the first brand touchpoint; investing in cohesive SKU design pays dividends in shelf differentiation and perceived product premium."
     ],
-    testimonial: {
-      quote: "The identity they built for Nut Soul perfectly captured what we stand for. Every element feels considered, warm, and real—our customers immediately connected with it.",
-      author: "Priya Nair",
-      role: "Founder, Nut Soul",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=120&auto=format&fit=crop"
-    },
+
     creatives: [
       { title: "Brand Logo & Wordmark", desc: "Custom vector logomark in warm earth-tone palette", img: "https://res.cloudinary.com/ddeyyxq14/image/upload/v1783321538/artboard_2_720_r6zevh.png" },
       { title: "Print Label Sheet - Almond", desc: "Wholesome nut spread label design variations", img: "https://res.cloudinary.com/ddeyyxq14/image/upload/v1783340707/03_page-0001_v1ywxh.jpg" },

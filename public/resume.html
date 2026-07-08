@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vamshi Krishna - Resume</title>
+  <title>Vamshi Krishna Dathrika - Resume</title>
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
   <style>
     :root {
       --color-primary: #0f172a;
-      --color-secondary: #475569;
+      --color-secondary: #334155;
       --color-accent: #3b82f6;
       --color-border: #e2e8f0;
       --color-bg-light: #f8fafc;
@@ -38,7 +38,7 @@
     }
 
     .resume-container {
-      max-width: 850px;
+      max-width: 900px;
       margin: 0 auto;
       background: #ffffff;
       padding: 50px;
@@ -49,7 +49,7 @@
 
     /* Print / PDF Action Button */
     .actions-bar {
-      max-width: 850px;
+      max-width: 900px;
       margin: 0 auto 20px auto;
       display: flex;
       justify-content: flex-end;
@@ -87,12 +87,12 @@
     header {
       border-bottom: 2px solid var(--color-border);
       padding-bottom: 25px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     .header-top {
       display: flex;
-      justify-content: justify;
+      justify-content: space-between;
       align-items: flex-start;
       flex-wrap: wrap;
       gap: 15px;
@@ -136,56 +136,58 @@
       color: var(--color-accent);
     }
 
+    .section-title {
+      font-family: var(--font-display);
+      color: var(--color-primary);
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-bottom: 1.5px solid var(--color-primary);
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      margin-top: 5px;
+    }
+
     /* Summary section */
     .summary-section {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     .summary-text {
-      font-size: 13.5px;
+      font-size: 12.5px;
       line-height: 1.6;
+      margin-bottom: 10px;
     }
 
     /* Grid Layout for experience and skills */
     .main-grid {
       display: grid;
-      grid-template-cols: 7fr 3fr;
+      grid-template-cols: 6.5fr 3.5fr;
       gap: 35px;
     }
 
-    .section-title {
-      font-family: var(--font-display);
-      color: var(--color-primary);
-      font-size: 16px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      border-bottom: 1.5px solid var(--color-primary);
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-    }
-
-    /* Experience cards */
+    /* Experience styling */
     .experience-item {
-      margin-bottom: 22px;
+      margin-bottom: 25px;
     }
 
     .experience-header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .experience-header h3 {
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 750;
       color: var(--color-primary);
     }
 
     .experience-company {
-      font-size: 12.5px;
-      font-weight: 600;
+      font-size: 13px;
+      font-weight: 650;
       color: var(--color-accent);
       margin-top: 1px;
     }
@@ -193,16 +195,35 @@
     .experience-duration {
       font-size: 11px;
       font-weight: 600;
-      color: #94a3b8;
+      color: #64748b;
       background-color: var(--color-bg-light);
       padding: 3px 8px;
       border-radius: 4px;
       white-space: nowrap;
     }
 
+    .experience-project-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #64748b;
+      margin-bottom: 8px;
+      margin-top: 2px;
+    }
+
+    .sub-section-title {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-top: 10px;
+      margin-bottom: 6px;
+    }
+
     .experience-details {
       list-style-type: none;
       padding-left: 0;
+      margin-bottom: 10px;
     }
 
     .experience-details li {
@@ -221,30 +242,16 @@
       font-weight: bold;
     }
 
-    .experience-impact {
-      font-size: 11px;
-      font-weight: 600;
-      color: #0f172a;
-      background-color: #f0fdf4;
-      border: 1px solid #bbf7d0;
-      padding: 6px 10px;
-      border-radius: 6px;
-      margin-top: 8px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
     /* Skills column */
     .skills-group {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .skills-group h4 {
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       color: var(--color-primary);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       text-transform: uppercase;
       letter-spacing: 0.02em;
     }
@@ -252,7 +259,7 @@
     .skills-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px;
+      gap: 5px;
     }
 
     .skill-tag {
@@ -265,25 +272,85 @@
       border-radius: 6px;
     }
 
-    /* Education & Certs */
+    /* Projects & Achievements */
+    .project-item {
+      margin-bottom: 18px;
+    }
+
+    .project-item h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 3px;
+    }
+
+    .project-desc {
+      font-size: 11.5px;
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+
+    .project-links {
+      font-size: 11px;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .project-links a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    .achievements-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .achievements-list li {
+      font-size: 11.5px;
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 12px;
+      line-height: 1.5;
+    }
+
+    .achievements-list li::before {
+      content: "✓";
+      color: #10b981;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    /* Education */
     .edu-item {
-      margin-bottom: 12px;
+      margin-bottom: 15px;
     }
 
     .edu-item h4 {
       font-size: 12.5px;
       font-weight: 700;
       color: var(--color-primary);
+      margin-bottom: 2px;
     }
 
     .edu-school {
       font-size: 11.5px;
       color: var(--color-secondary);
+      line-height: 1.4;
     }
 
     .edu-year {
       font-size: 10.5px;
-      color: #94a3b8;
+      font-weight: 600;
+      color: #64748b;
+      margin-top: 2px;
     }
 
     /* Responsive */
@@ -331,6 +398,12 @@
         background-color: transparent;
         border: 1px solid #cbd5e1;
       }
+      .experience-item {
+        page-break-inside: avoid;
+      }
+      .project-item {
+        page-break-inside: avoid;
+      }
     }
   </style>
 </head>
@@ -353,23 +426,27 @@
     <header>
       <div class="header-top">
         <div class="title-area">
-          <h1>Vamshi Krishna</h1>
-          <h2>Brand Designer & Lead Growth Marketer</h2>
+          <h1>Vamshi Krishna Dathrika</h1>
+          <h2>Creative Head (UI/UX & Design Lead)</h2>
         </div>
         <div class="contact-info">
           <span>📞 <a href="tel:+918121948341">+91 8121948341</a></span>
           <span>✉️ <a href="mailto:dathrikavamshi8@gmail.com">dathrikavamshi8@gmail.com</a></span>
-          <span>📍 Hyderabad, Telangana, India</span>
-          <span>🔗 <a href="https://www.linkedin.com/in/vamshi-krishna-42417122a/" target="_blank">linkedin.com/in/vamshi-krishna-42417122a/</a></span>
+          <span>📍 Nizamabad, Telangana</span>
+          <span>🔗 <a href="https://www.linkedin.com/in/vamshi-krishna-42417122a/" target="_blank">linkedin.com/in/vamshi-krishna-42417122a</a></span>
+          <span>💻 <a href="https://github.com/Vamshidathrika" target="_blank">github.com/Vamshidathrika</a></span>
         </div>
       </div>
     </header>
 
     <!-- Executive Summary -->
     <section class="summary-section">
-      <h3 class="section-title">Summary</h3>
+      <h3 class="section-title">Professional Summary</h3>
       <p class="summary-text">
-        Results-driven Growth Marketer, Brand Designer, and Automation Engineer with over 6 years of experience managing high-budget digital campaigns ($4.8M+ annual spend) and scaling DTC and SaaS brands. Proven track record in conversion rate optimization (CRO), brand identity design, short-form video editing, and building custom integration pipelines (Zapier, Slack API, Jira) that automate team workflows and optimize conversion funnels.
+        UI/UX Designer with 4 years of design experience, including 2+ years focused on UI/UX for web and mobile applications. Currently Creative Head at USK Corp, leading end-to-end UI/UX for Soult — a live digital legacy vault platform for properties and assets, designed for senior users. Proficient in Figma, Adobe Illustrator, and Photoshop for wireframes, mockups, prototypes, and responsive web design.
+      </p>
+      <p class="summary-text">
+        Skilled in user-centered design, interaction design, and building reusable design systems and component libraries. Experienced collaborating with developers, product owners, and stakeholders in agile environments, with working knowledge of HTML/CSS for design feasibility and developer handoff. Focused on transforming complex requirements into simple, user-centric design solutions.
       </p>
     </section>
 
@@ -384,117 +461,184 @@
         <div class="experience-item">
           <div class="experience-header">
             <div>
-              <h3>Lead Growth Marketer & CRO</h3>
-              <div class="experience-company">Zenith Digital Group</div>
+              <h3>Creative Head (UI/UX & Design Lead)</h3>
+              <div class="experience-company">USK Corp</div>
+              <div class="experience-project-title">Project: Soult</div>
             </div>
-            <span class="experience-duration">Jan 2022 - Present</span>
+            <span class="experience-duration">Nov 2025 - Present</span>
           </div>
+          
+          <h4 class="sub-section-title">UI/UX Design (Web & Mobile Applications):</h4>
           <ul class="experience-details">
-            <li>Direct $4.8M+ annual ad budgets across Google, Meta, and LinkedIn to scale client revenue.</li>
-            <li>Design and execute split A/B tests on landing pages, improving checkout conversion rates by 34% on average.</li>
-            <li>Deploy Google Analytics 4 (GA4) server-side attribution tracking and custom CRM integration pipelines.</li>
+            <li>Designed Soult, a digital legacy vault for properties, assets, and documents — translated complex, trust-sensitive requirements into simple, secure, user-centric flows for senior users.</li>
+            <li>Created wireframes, mockups, interaction flows, and high-fidelity prototypes in Figma — responsive across desktop, tablet, and mobile — from requirements through developer handoff.</li>
           </ul>
-          <div class="experience-impact">
-            📈 <strong>Impact:</strong> Managed $10M+ in aggregate spend, scaling client revenue by an average of 3x.
-          </div>
+
+          <h4 class="sub-section-title">Design Systems & Collaboration:</h4>
+          <ul class="experience-details">
+            <li>Built and maintained reusable component libraries and design guidelines in Figma to ensure consistency across products and platforms.</li>
+            <li>Collaborated with developers, product owners, and stakeholders in agile sprints to define, validate, and implement design solutions.</li>
+            <li>Reviewed design feasibility with developers using HTML/CSS understanding to ensure accurate implementation.</li>
+          </ul>
+
+          <h4 class="sub-section-title">Creative Direction:</h4>
+          <ul class="experience-details">
+            <li>Directed all company-wide creative output including brand graphics, motion graphics, and video content (After Effects, Premiere Pro), and established design standards for the creative team.</li>
+          </ul>
         </div>
 
         <!-- Experience 2 -->
         <div class="experience-item">
           <div class="experience-header">
             <div>
-              <h3>PPC Advertising Specialist</h3>
-              <div class="experience-company">ClickLaunch Media Agency</div>
+              <h3>Graphic Designer (UI/UX Contributor)</h3>
+              <div class="experience-company">Vsource</div>
             </div>
-            <span class="experience-duration">Mar 2020 - Dec 2021</span>
+            <span class="experience-duration">2024 - 2025</span>
           </div>
+          
+          <h4 class="sub-section-title">Graphic Design & UI/UX:</h4>
           <ul class="experience-details">
-            <li>Scaled Google PPC and Meta campaigns for 15+ DTC and SaaS high-growth brands.</li>
-            <li>Reduced client Cost Per Acquisition (CPA) by 28% utilizing smart automated bidding structures.</li>
-            <li>Pioneered video ad structures across YouTube and TikTok, improving click-through rate (CTR) by 4.5%.</li>
+            <li>Hired as Graphic Designer; took on UI/UX design for founder-led initiatives — designed web-based layouts, page structures, and interface concepts alongside core brand work.</li>
+            <li>Created wireframes, mockups, and responsive web layouts in Figma, translating founder requirements and briefs into clean, user-friendly interfaces.</li>
+            <li>Produced graphics, layouts, and marketing creatives in Illustrator and Photoshop while maintaining visual consistency across deliverables.</li>
           </ul>
-          <div class="experience-impact">
-            🎯 <strong>Impact:</strong> Maintained average 6.2x ROAS across ad accounts, saving clients $400k+ in ad waste.
-          </div>
         </div>
 
         <!-- Experience 3 -->
         <div class="experience-item">
           <div class="experience-header">
             <div>
-              <h3>SEO & Social Specialist</h3>
-              <div class="experience-company">Horizon Franchise Networks</div>
+              <h3>Freelance Graphic Designer</h3>
+              <div class="experience-company">Freelance (Independent Clients)</div>
             </div>
-            <span class="experience-duration">Jun 2018 - Feb 2020</span>
+            <span class="experience-duration">2022 - 2024</span>
           </div>
+          
+          <h4 class="sub-section-title">Graphic Design & Photography Album Design:</h4>
           <ul class="experience-details">
-            <li>Managed technical SEO audits and keyword tracking structures for 35 clinical franchise locations.</li>
-            <li>Engineered organic content hubs, growing overall ranked keywords from 2,000 to 18,000.</li>
-            <li>Drove franchise patient bookings up 45% through organic social channels and local profile optimization.</li>
+            <li>Started design career freelancing during B.Tech — delivered brand graphics, marketing creatives, and photography album designs/layouts for individual and business clients.</li>
+            <li>Managed the full client cycle independently: requirement gathering, concepts, revisions from feedback, and final delivery — building the visual craft that led into UI/UX.</li>
           </ul>
-          <div class="experience-impact">
-            🚀 <strong>Impact:</strong> Grew search impressions from 50k to 650k/mo, generating 5k organic leads/mo.
-          </div>
         </div>
 
       </main>
 
-      <!-- Right Column: Skills & Education -->
+      <!-- Right Column: Skills, Education, Projects, Achievements -->
       <aside>
         
         <!-- Skills Section -->
         <section class="skills-section">
           <h3 class="section-title">Skills</h3>
           
-          <!-- Group 1 -->
           <div class="skills-group">
-            <h4>Growth & PPC</h4>
+            <h4>Design Tools</h4>
             <div class="skills-list">
-              <span class="skill-tag">Meta Ads</span>
-              <span class="skill-tag">Google Ads</span>
-              <span class="skill-tag">LinkedIn Ads</span>
-              <span class="skill-tag">CRO</span>
-              <span class="skill-tag">A/B Testing</span>
-              <span class="skill-tag">Server-side GA4</span>
-            </div>
-          </div>
-
-          <!-- Group 2 -->
-          <div class="skills-group">
-            <h4>Creative & Design</h4>
-            <div class="skills-list">
-              <span class="skill-tag">Brand Design</span>
-              <span class="skill-tag">UI/UX Layout</span>
               <span class="skill-tag">Figma</span>
-              <span class="skill-tag">Illustrator</span>
-              <span class="skill-tag">Short-form Video</span>
+              <span class="skill-tag">Adobe Illustrator</span>
+              <span class="skill-tag">Adobe Photoshop</span>
+              <span class="skill-tag">Adobe After Effects</span>
+              <span class="skill-tag">Adobe Premiere Pro</span>
             </div>
           </div>
 
-          <!-- Group 3 -->
           <div class="skills-group">
-            <h4>Automations</h4>
+            <h4>UI/UX Skills</h4>
             <div class="skills-list">
-              <span class="skill-tag">Zapier</span>
-              <span class="skill-tag">Slack API</span>
-              <span class="skill-tag">Jira API</span>
-              <span class="skill-tag">Custom Webhooks</span>
-              <span class="skill-tag">Process Maps</span>
+              <span class="skill-tag">Wireframing</span>
+              <span class="skill-tag">Mockups</span>
+              <span class="skill-tag">High-Fidelity Prototypes</span>
+              <span class="skill-tag">Interaction Flows</span>
+              <span class="skill-tag">Responsive Web Design</span>
+              <span class="skill-tag">User-Centered Design</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4>Design Systems</h4>
+            <div class="skills-list">
+              <span class="skill-tag">Component Libraries</span>
+              <span class="skill-tag">Figma Variants</span>
+              <span class="skill-tag">Auto-Layout</span>
+              <span class="skill-tag">Design Tokens</span>
+              <span class="skill-tag">Style Guides</span>
+              <span class="skill-tag">Cross-Platform Consistency</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4>Front-End Basics</h4>
+            <div class="skills-list">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">Responsive Breakpoints</span>
+              <span class="skill-tag">Developer Handoff</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4>Automation & AI</h4>
+            <div class="skills-list">
+              <span class="skill-tag">n8n Workflows</span>
+              <span class="skill-tag">AI-Assisted Design</span>
+              <span class="skill-tag">RAG Fundamentals</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4>Soft Skills</h4>
+            <div class="skills-list">
+              <span class="skill-tag">Critical Thinking</span>
+              <span class="skill-tag">Creative Thinking</span>
+              <span class="skill-tag">Problem-Solving</span>
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Decision-Making</span>
             </div>
           </div>
         </section>
 
         <!-- Education Section -->
-        <section class="education-section" style="margin-top: 10px;">
+        <section class="education-section">
           <h3 class="section-title">Education</h3>
-          <div class="edu-item" style="margin-bottom: 15px;">
+          <div class="edu-item">
             <h4>B.Tech in Electronics & Communication Engineering</h4>
-            <div class="edu-school">Vijay Rural Engineering College<br><span style="font-size: 10.5px; color: #64748b;">(JNTU Hyderabad affiliated), Nizamabad</span></div>
+            <div class="edu-school">Vijay Rural Engineering College<br><span style="font-size: 10px; color: #64748b;">(JNTU Hyderabad affiliated), Nizamabad</span></div>
             <div class="edu-year">2021 - 2025 | CGPA: 7/10</div>
           </div>
           <div class="edu-item">
             <h4>Diploma in Electronics & Communication Engineering</h4>
           </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" style="margin-top: 15px;">
+          <h3 class="section-title">Projects</h3>
+          
+          <div class="project-item">
+            <h4>Repeatless — AI Gmail Assistant</h4>
+            <p class="project-desc">Designed the product UI for an AI email triage assistant — priority inbox, AI-drafted replies, and daily digest flows for time-poor executives.</p>
+            <div class="project-links">
+              <a href="https://github.com/Vamshidathrika/repeatless-email-ai-assistant" target="_blank">🔗 GitHub Link</a>
+              <a href="https://repeatless-email-ai-assistant.vercel.app/" target="_blank">🔗 Live App Link</a>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <h4>Jira Dashboard for Founders</h4>
+            <p class="project-desc">Designed an executive dashboard for founders with hill-chart visualization of team progress, sprint health, and workload views — simplifying complex project data.</p>
+            <div class="project-links">
+              <a href="https://github.com/Vamshidathrika/jira-dashboard-for-founders" target="_blank">🔗 GitHub Link</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements-section" style="margin-top: 15px;">
+          <h3 class="section-title">Achievements</h3>
+          <ul class="achievements-list">
+            <li>Promoted to Creative Head within the first year at USK Corp, owning end-to-end UI/UX for a live product.</li>
+            <li>Grew from freelance graphic design to leading product design for shipped web and mobile applications in under 4 years.</li>
+          </ul>
         </section>
 
       </aside>
