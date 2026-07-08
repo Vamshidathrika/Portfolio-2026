@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font Family Definitions */
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Premium Obsidian & Indigo Sunset Palette */
+  --color-primary: #6366f1; /* Indigo */
+  --color-secondary: #ec4899; /* Pink/Rose */
+  --color-accent: #14b8a6; /* Teal */
+  
+  --color-dark-bg: #030303; /* Rich Obsidian */
+  --color-light-bg: #fcfcfc; /* Crisp off-white */
+
+  /* Custom Transitions & Animations */
+  --animate-fade-in: fade-in 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-scale-in: scale-in 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  --animate-marquee: marquee 25s linear infinite;
+  --animate-marquee-left: marquee-left 25s linear infinite;
+  --animate-marquee-right: marquee-right 25s linear infinite;
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes scale-in {
+    from { transform: scale(0.96); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes marquee-left {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes marquee-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+  }
+}
+
+/* Force dark mode class selection compatibility in Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    letter-spacing: -0.02em;
+  }
+  
+  body {
+    background-color: var(--color-light-bg);
+    color: #1c1917; /* stone-900 */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark body {
+    background-color: var(--color-dark-bg);
+    color: #f5f5f4; /* stone-100 */
+  }
+
+  /* Thin, sleek scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 9999px;
+  }
+  
+  .dark ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Bento Card and Grid layout utilities with nested hover styles */
+@utility bento-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(228, 228, 231, 0.6); /* zinc-200 */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &:hover {
+    transform: translateY(-4px) scale(1.008);
+    border-color: rgba(99, 102, 241, 0.35);
+    box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.06), 0 4px 12px -2px rgba(99, 102, 241, 0.06);
+  }
+}
+
+@utility bento-card-dark {
+  background: rgba(10, 10, 10, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(39, 39, 42, 0.6); /* zinc-800 */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &:hover {
+    transform: translateY(-4px) scale(1.008);
+    border-color: rgba(99, 102, 241, 0.45);
+    box-shadow: 0 24px 48px -16px rgba(0, 0, 0, 0.85), 0 4px 16px -2px rgba(99, 102, 241, 0.18);
+  }
+}
+
+/* YouTube Shorts vertical cover fill — scale a 16:9 iframe to fill a 9:16 container */
+@utility yt-iframe-container {
+  & iframe {
+    /*
+      Math: card is 9:16 (CW × CH where CH = CW×16/9).
+      YouTube iframe is always 16:9. Shorts content is pillarboxed inside it.
+      Shorts content width  = IW × (9/16)²  = IW × 81/256
+      For content width = CW  →  IW = CW × 256/81 ≈ 3.16 × CW  →  316%
+      At IW = 3.16CW,  IH = IW × 9/16 = 1.777CW = CH  ✓
+      Result: iframe is 16:9 and the Shorts content fills the 9:16 card exactly.
+    */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 316% !important;
+    height: 100% !important;
+    transform: translate(-50%, -50%);
+    border: 0;
+    pointer-events: none;
+  }
+}
+
+
+/* Accent Glow Overlays */
+@utility radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.08) 0%, rgba(99, 102, 241, 0) 50%);
+}
+
+@utility radial-glow-dark {
+  background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.12) 0%, rgba(99, 102, 241, 0) 50%);
+}

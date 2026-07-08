@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Optimization -->
+    <title>Alex Mercer | Senior Digital Marketing Specialist & Growth Hacker</title>
+    <meta name="description" content="Portfolio of Alex Mercer, a Senior Digital Marketing Specialist. Specializing in SEO, Google Ads, Meta Ads, SMM, and high-ROI conversion rate optimization campaigns." />
+    <meta name="keywords" content="Digital Marketer, Marketing Portfolio, SEO Specialist, PPC Expert, Google Ads Manager, Meta Ads Specialist, Growth Marketing, Conversion Rate Optimization" />
+    <meta name="author" content="Alex Mercer" />
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Alex Mercer | Senior Digital Marketing Specialist" />
+    <meta property="og:description" content="Helping brands scale through data-driven campaigns, high-converting funnel optimizations, and premium organic search strategies." />
+    <meta property="og:type" content="website" />
+    
+    <!-- Custom Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Global CSS Variables Preload for dark background to prevent flashing -->
+    <script>
+      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-50 antialiased selection:bg-blue-500 selection:text-white transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
